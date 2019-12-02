@@ -11,6 +11,9 @@ namespace MeuProjGit
         static void Main(string[] args)
         {
             Console.WriteLine("Olá mundo");
+
+            Console.WriteLine("Novo git do meu projeto");
+
             Console.ReadLine();
         }
     }
