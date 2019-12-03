@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MeuProjGit
 {
@@ -10,11 +7,24 @@ namespace MeuProjGit
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Olá mundo");
+            List<string> minhaLista = new List<string>
+            {
+                "Felipe",
+                "Gilmar",
+                "Ariosvaldo",
+                "Adagoberto",
+                "Valdisney",
+                "Rubesrvaldo"
+            };
 
-            Console.WriteLine("Novo git do meu projeto");
+            minhaLista.ForEach(x => Console.WriteLine(x));
 
-            Console.ReadLine();
+            //foreach (var item in minhaLista)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            Console.ReadKey(true);
         }
     }
 }
