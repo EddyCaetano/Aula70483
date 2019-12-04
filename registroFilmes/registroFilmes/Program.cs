@@ -12,10 +12,7 @@ namespace registroFilmes
         static List<string> listaDeFilmes = new List<string>();
         static void Main(string[] args)
         {
-            Console.WriteLine("********************************");
-            Console.WriteLine("**Sistema de Registro de Filme**");
-            Console.WriteLine("********************************");
-
+            MsgInicial();
 
             var menuEscolhido = "0";
 
@@ -44,8 +41,16 @@ namespace registroFilmes
             //Console.ReadKey(true);
             
         }
+        static void MsgInicial()
+        {
+
+            Console.WriteLine("********************************");
+            Console.WriteLine("**Sistema de Registro de Filme**");
+            Console.WriteLine("********************************");
+	    }
         static string Menu()
         {
+
             Console.WriteLine("Digite o número para o Menu desejado!");
             Console.WriteLine("1 - Registrar Filme");
             Console.WriteLine("2 - Listar Filmes");

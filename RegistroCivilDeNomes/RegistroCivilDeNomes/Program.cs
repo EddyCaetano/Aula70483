@@ -31,6 +31,10 @@ namespace RegistroCivilDeNomes
                         ListarNome();
                         break;
 
+                    case "3":
+                        EditarNome();
+                        break;
+
                     default:
                         Console.WriteLine("Menu Inválido!");
                         break;
@@ -40,6 +44,15 @@ namespace RegistroCivilDeNomes
 
             }
 
+            Console.ReadKey(true);
+        }
+        static void EditarNome()
+        {
+            Console.WriteLine("Edição de Nomes do Sistema de Registros");
+
+            var numerador = 0;
+
+            listaDeNomes.ForEach(x => Console.WriteLine(x + " Núemro -> " + numerador++));
             Console.ReadKey(true);
         }
         static void MsgInicial()
@@ -73,11 +86,11 @@ namespace RegistroCivilDeNomes
         static string MostrarMenu()
         {
             Console.WriteLine("Digite o número para a opção desejada");
-            Console.WriteLine("1 - Registrar Nome");
-            Console.WriteLine("2 - Listar Nomes");
+            Console.WriteLine("1 - Registrar Nome");//ok
+            Console.WriteLine("2 - Listar Nomes");//ok
             Console.WriteLine("3 - Editar Nomes");
             Console.WriteLine("4 - Excluir Nomes");
-            Console.WriteLine("5 - Sair do Sistema");
+            Console.WriteLine("5 - Sair do Sistema");//ok
 
             return Console.ReadLine();
         }
