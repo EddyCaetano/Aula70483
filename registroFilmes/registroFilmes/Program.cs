@@ -21,34 +21,18 @@ namespace registroFilmes
 
             while (menuEscolhido != "3")
             {
-                Console.WriteLine("Digite o número para o Menu desejado!");
-                Console.WriteLine("1 - Registrar Filme");
-                Console.WriteLine("2 - Listar Filmes");
-                Console.WriteLine("3 - Sair do Sistema");
-
-                menuEscolhido = Console.ReadLine();
+                menuEscolhido = Menu();
 
                 switch (menuEscolhido)
                 {
                     case "1":
 
-                        Console.WriteLine("Informe o nome do seu filme:");
-                        var nomeInformado = Console.ReadLine();
-
-                        listaDeFilmes.Add(nomeInformado);
-
-                        Console.WriteLine("Registro Realizado! Aperte \"Enter\" para sair");
-                        //Timer t = new Timer(TimerCallback, null, 0, 2000);
-                        Console.ReadKey(true);
+                        RegFilme();
                         break;
 
                     case "2":
 
-                        Console.WriteLine("Filmes Registrados:");
-                        listaDeFilmes.ForEach(x => Console.WriteLine($"Filme: {x}"));
-
-                        Console.WriteLine("Lista de filmes exibidos com sucesso.");
-                        Console.ReadKey(true);
+                        ListarFilmes();
                         break;
 
                     default:
@@ -58,6 +42,35 @@ namespace registroFilmes
                 Console.Clear();
             }
             //Console.ReadKey(true);
+            
+        }
+        static string Menu()
+        {
+            Console.WriteLine("Digite o número para o Menu desejado!");
+            Console.WriteLine("1 - Registrar Filme");
+            Console.WriteLine("2 - Listar Filmes");
+            Console.WriteLine("3 - Sair do Sistema");
+
+            return Console.ReadLine();
+        }
+        static void RegFilme()
+        {
+            Console.WriteLine("Informe o nome do seu filme:");
+            var nomeInformado = Console.ReadLine();
+
+            listaDeFilmes.Add(nomeInformado);
+
+            Console.WriteLine("Registro Realizado! Aperte \"Enter\" para sair");
+            //Timer t = new Timer(TimerCallback, null, 0, 2000);
+            Console.ReadKey(true);
+        }
+        static void ListarFilmes()
+        {
+            Console.WriteLine("Filmes Registrados:");
+            listaDeFilmes.ForEach(x => Console.WriteLine($"Filme: {x}"));
+
+            Console.WriteLine("Lista de filmes exibidos com sucesso.");
+            Console.ReadKey(true);
         }
     }
 }
