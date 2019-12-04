@@ -11,47 +11,24 @@ namespace RegistroCivilDeNomes
         static List<string> listaDeNomes = new List<string>();
         static void Main(string[] args)
         {
-
-            Console.WriteLine("*********************************");
-            Console.WriteLine("******Sistema de Registro********");
-            Console.WriteLine("*********************************");
+            MsgInicial();
 
             var menuEscolhido = "0";
 
             while(menuEscolhido != "5")
-            {
-
-                Console.WriteLine("Digite o número para a opção desejada");
-                Console.WriteLine("1 - Registrar Nome");
-                Console.WriteLine("2 - Listar Nomes");
-                Console.WriteLine("3 - Editar Nomes");
-                Console.WriteLine("4 - Excluir Nomes");
-                Console.WriteLine("5 - Sair do Sistema");
-
-                menuEscolhido = Console.ReadLine();
-
+            {                
+                menuEscolhido = MostrarMenu();
 
                 switch (menuEscolhido)
                 {
                     case "1":
-                        Console.WriteLine("Registro de Nome Selecionado.");
-                        Console.WriteLine("Informe um Nome:");
-                        var nomeInformado = Console.ReadLine();
 
-                        listaDeNomes.Add(nomeInformado);
-                    
-
-                        Console.WriteLine("Nome informado com sucesso!");
-                        Console.ReadKey(true);
+                        RegistrarNome();
                         break;
 
                     case "2":
-                        Console.WriteLine("Listagem de Nomes Selecionado.");
 
-                        listaDeNomes.ForEach(x => Console.WriteLine($"Nome: {x}"));
-
-                        Console.WriteLine("Listagem de nome finalizada!");
-                        Console.ReadKey(true);
+                        ListarNome();
                         break;
 
                     default:
@@ -63,9 +40,46 @@ namespace RegistroCivilDeNomes
 
             }
 
-
-
             Console.ReadKey(true);
+        }
+        static void MsgInicial()
+        {
+            Console.WriteLine("*********************************");
+            Console.WriteLine("******Sistema de Registro********");
+            Console.WriteLine("*********************************");
+        }
+        static void ListarNome()
+        {
+            Console.WriteLine("Listagem de Nomes Selecionado.");
+
+            listaDeNomes.ForEach(x => Console.WriteLine($"Nome: {x}"));
+
+            Console.WriteLine("Listagem de nome finalizada!");
+            Console.ReadKey(true);
+        }
+        static void RegistrarNome()
+        {
+            Console.WriteLine("Registro de Nome Selecionado.");
+            Console.WriteLine("Informe um Nome:");
+            var nomeInformado = Console.ReadLine();
+
+            listaDeNomes.Add(nomeInformado);
+
+
+            Console.WriteLine("Nome informado com sucesso!");
+            Console.ReadKey(true);
+
+        }
+        static string MostrarMenu()
+        {
+            Console.WriteLine("Digite o número para a opção desejada");
+            Console.WriteLine("1 - Registrar Nome");
+            Console.WriteLine("2 - Listar Nomes");
+            Console.WriteLine("3 - Editar Nomes");
+            Console.WriteLine("4 - Excluir Nomes");
+            Console.WriteLine("5 - Sair do Sistema");
+
+            return Console.ReadLine();
         }
     }
 }
