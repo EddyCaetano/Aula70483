@@ -52,7 +52,18 @@ namespace RegistroCivilDeNomes
 
             var numerador = 0;
 
-            listaDeNomes.ForEach(x => Console.WriteLine(x + " Núemro -> " + numerador++));
+            listaDeNomes.ForEach(x => Console.WriteLine("Nome: {0,-15}Número: {1,-15}",x,numerador++));
+            Console.WriteLine("Informe o númeor para edição");
+
+            var index = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe novo nome para o registro");
+
+            var novoNome = Console.ReadLine();
+            listaDeNomes[index] = novoNome;
+
+            Console.WriteLine("Registro alterado com sucesso!");
+
             Console.ReadKey(true);
         }
         static void MsgInicial()
