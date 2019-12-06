@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfFilmes", "WpfFilmes\WpfFilmes.csproj", "{AA650ED6-3B48-4F5F-A55F-884DC4DD342A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA650ED6-3B48-4F5F-A55F-884DC4DD342A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA650ED6-3B48-4F5F-A55F-884DC4DD342A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA650ED6-3B48-4F5F-A55F-884DC4DD342A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA650ED6-3B48-4F5F-A55F-884DC4DD342A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {282EA3F4-CF10-4FBB-B343-F3E18717A16F}
+	EndGlobalSection
+EndGlobal
