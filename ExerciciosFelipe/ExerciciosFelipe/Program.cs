@@ -36,14 +36,10 @@ namespace ExerciciosFelipe
 
             Console.WriteLine("DIGITE UM TEXTO AQUI:");
             string texto = Console.ReadLine();
-            int contador = 0;
-            foreach (var item in texto)
-            {
-                contador++;
-            }
+
             Console.WriteLine("*******************************************************************************");
             Console.WriteLine("*******************************************************************************");
-            Console.WriteLine($"Seu texto con tém {contador} caracteres.");
+            Console.WriteLine($"Seu texto con tém {texto.Length} caracteres.");
             Console.WriteLine("*******************************************************************************");
             Console.WriteLine("*******************************************************************************");
 
