@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastrarPesssoaObj", "CadastrarPesssoaObj\CadastrarPesssoaObj.csproj", "{F62549D7-9DBA-4EA0-A636-E8669CA9D87B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F62549D7-9DBA-4EA0-A636-E8669CA9D87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62549D7-9DBA-4EA0-A636-E8669CA9D87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62549D7-9DBA-4EA0-A636-E8669CA9D87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62549D7-9DBA-4EA0-A636-E8669CA9D87B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC6B3F26-2526-4314-BE1B-8039900D9E6F}
+	EndGlobalSection
+EndGlobal

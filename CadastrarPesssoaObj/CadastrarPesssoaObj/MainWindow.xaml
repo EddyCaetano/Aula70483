@@ -1,0 +1,27 @@
+﻿<Window x:Class="CadastrarPesssoaObj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadastrarPesssoaObj"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="335*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="291" Margin="10,10,0,0" VerticalAlignment="Top" Width="572" Grid.ColumnSpan="3" Grid.Row="1"/>
+        <Button x:Name="button" Content="Cadastrar" Margin="10" Click="Button_Click"/>
+        <TextBox x:Name="tbxNome" Grid.Column="1" Margin="10,0,10,10" TextWrapping="Wrap" Height="36" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="tbxData" Grid.Column="2" Margin="10,0,10,10" TextWrapping="Wrap" Height="36" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Data de Nascimento"/><Run Text=":"/></TextBlock>
+
+    </Grid>
+</Window>
