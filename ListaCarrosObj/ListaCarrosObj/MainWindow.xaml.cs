@@ -50,5 +50,17 @@ namespace ListaCarrosObj
              }
 
         };
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Carros.Add(new Carro()
+            {
+                Modelo = tbxModelo.Text,
+                Marca = tbxMarca.Text,
+                Ano = int.Parse(tbxAno.Text)
+            });
+            dataGrid.ItemsSource = null;
+            dataGrid.ItemsSource = Carros;
+        }
     }
 }

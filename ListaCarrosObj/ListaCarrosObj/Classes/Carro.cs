@@ -11,5 +11,25 @@ namespace ListaCarrosObj.Classes
         public string Modelo { get; set; }
         public string Marca { get; set; }
         public int Ano { get; set; }
+        public string Placa
+        {
+            get
+            {
+                return TipoPlaca();
+            }
+        }
+
+        private string TipoPlaca()
+        {
+            if (2019 - Ano > 20)
+            {
+                return "Placa Preta";
+            }
+            else
+            {
+                return "Placa Normal";
+            }
+        }
+
     }
 }

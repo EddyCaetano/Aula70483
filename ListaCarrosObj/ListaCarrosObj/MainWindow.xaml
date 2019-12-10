@@ -5,9 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ListaCarrosObj"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="523.276">
+        Title="MainWindow" Height="450" Width="589.276">
     <Grid>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="317" Margin="10,92,0,0" VerticalAlignment="Top" Width="493"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="357*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="176*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dataGrid" Height="344" Margin="10,10,0,0" VerticalAlignment="Top" IsReadOnly="True" Grid.ColumnSpan="4" HorizontalAlignment="Left" Width="526" Grid.Row="1"/>
+        <Button x:Name="button" Content="CADASTRAR" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="114" Height="44" Click="Button_Click"/>
+        <TextBox x:Name="tbxModelo" Height="44" Margin="10,10,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="tbxMarca" Height="44" Margin="10,10,8,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox x:Name="tbxAno" Height="44" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="3" HorizontalAlignment="Left" Width="117"/>
 
     </Grid>
 </Window>
