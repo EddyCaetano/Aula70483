@@ -1,0 +1,25 @@
+﻿<Window x:Class="CadastroDePessoa.View.CadastroPessoa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadastroDePessoa.View"
+        mc:Ignorable="d"
+        Title="CadastroPessoa" Height="219" Width="466.5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="315*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Nome:" Margin="65,10,10,52"/>
+        <Label x:Name="label1" Content="Idade:" Margin="65,50,10,12"/>
+        <TextBox x:Name="tbxNome" Margin="15,14,21,51" TextWrapping="Wrap" Grid.Column="1"/>
+        <TextBox x:Name="tbxIdade" Margin="15,53,21,12" TextWrapping="Wrap" Grid.Column="1"/>
+        <Button x:Name="button" Content="Salvar!" Grid.Column="1" Margin="15,17,21,30" Grid.Row="1" FontSize="20" Click="Button_Click"/>
+
+    </Grid>
+</Window>
