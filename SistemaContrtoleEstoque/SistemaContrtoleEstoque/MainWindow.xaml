@@ -1,0 +1,17 @@
+﻿<Window x:Class="SistemaContrtoleEstoque.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistemaContrtoleEstoque"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="180" Width="200">
+    <Grid>
+        <Button x:Name="button" Content="Login" Margin="23,98,10,10" Click="Button_Click"/>
+        <Label x:Name="label" Content="Usuário:&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" Height="26" Width="57"/>
+        <Label x:Name="label1" Content="Senha" HorizontalAlignment="Left" Margin="16,59,0,0" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="tbxUsuario" Height="23" Margin="0,21,5,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120"/>
+        <PasswordBox x:Name="tbxSenha" Margin="0,59,10,0" VerticalAlignment="Top" Height="25" HorizontalAlignment="Right" Width="115"/>
+
+    </Grid>
+</Window>
