@@ -26,21 +26,5 @@ namespace SistemaContrtoleEstoque.Controller
         {
             return ctx.Estoques.ToList<Estoque>();
         }
-        public object RetornaListaEstoque()
-        {
-            var estoque = ctx.Estoques.Where(x => x.Ativo);
-            var ususarios = ctx.Usuarios;
-
-            var retorno = from est in estoque
-                          join usu in ususarios on est.UsuarioCriacao equals usu.Id
-                          select new
-                          {
-                              Produto = est.Produto,
-                              Quantidade = est.Quantidade,
-                              Valor = est.Valor,
-                              Usuario = usu.Login
-                          };
-            return retorno;
-        }
     }
 }

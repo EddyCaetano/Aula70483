@@ -27,6 +27,10 @@ namespace SistemaContrtoleEstoque.Controller
             ctx.Usuarios.Add(item);
             ctx.SaveChanges();
         }
+        public List<Usuario> GetUsuarios()
+        {
+            return ctx.Usuarios.ToList();
+        }
 
         string Hash(string input)
         {
